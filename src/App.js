@@ -6,6 +6,7 @@ function Controls({ theCanvas, model, labels }) {
 
   useEffect(() => {
     console.log(prediction);
+
   });
 
   return (
@@ -30,6 +31,7 @@ function Controls({ theCanvas, model, labels }) {
       </button>
     </div>
   );
+  
 }
 
 const Canvas = React.forwardRef((props, ref) => {

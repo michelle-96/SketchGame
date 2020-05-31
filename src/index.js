@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import { Canvas, Controls } from "./App";
+import { CurrentRound } from "./Timer.js";
 import * as serviceWorker from "./serviceWorker";
 import * as tf from "@tensorflow/tfjs";
 
@@ -13,6 +14,10 @@ ReactDOM.render(
   <div>
     <Canvas ref={ref} />
     <Controls theCanvas={ref} model={model} labels={labels} />
+    <CurrentRound labels={labels}/>
+
+
+
   </div>,
   document.getElementById("root")
 );
